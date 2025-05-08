@@ -533,26 +533,41 @@
 </script>
 
 <script>
-  document.getElementById('contact-form').addEventListener('submit', function (e) {
-    e.preventDefault();
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contact-form');
+    const responseMessage = document.getElementById('response-message');
 
-    const formData = new FormData(this);
-    const data = {};
-    formData.forEach((value, key) => (data[key] = value));
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
 
-    fetch('https://script.google.com/macros/s/AKfycbxz3rReWPzAWOfxlhTf2Qwnk8pGcopXCu5y6YNdJiwORwFx-nXE-iaqADIH5xe_rlAqBA/exec', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
+      // Run Bootstrap validation
+      if (!form.checkValidity()) {
+        event.stopPropagation(); // Stop event bubbling
+        form.classList.add('was-validated');
+        return; // Don't proceed to API call
+      }
+
+      // Proceed with API call if form is valid
+      const formData = new FormData(form);
+      const data = {};
+      formData.forEach((value, key) => (data[key] = value));
+
+      fetch('https://script.google.com/macros/s/AKfycbxz3rReWPzAWOfxlhTf2Qwnk8pGcopXCu5y6YNdJiwORwFx-nXE-iaqADIH5xe_rlAqBA/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      responseMessage.textContent = 'Message sent successfully!';
+      form.reset();
+      form.classList.remove('was-validated');
     });
-
-    document.getElementById('response-message').textContent = 'Message sent successfully!';
-    this.reset();
   });
 </script>
+
 
   </body>
 </html>
