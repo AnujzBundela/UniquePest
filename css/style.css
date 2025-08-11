@@ -1,0 +1,1765 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Italic.woff2") format("woff2"),
+    url("../fonts/Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("../fonts/Teko-Bold.woff2") format("woff2"),
+    url("../fonts/Teko-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Roboto-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("../fonts/Teko-Regular.woff2") format("woff2"),
+    url("../fonts/Teko-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("../fonts/Teko-Medium.woff2") format("woff2"),
+    url("../fonts/Teko-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("../fonts/Teko-SemiBold.woff2") format("woff2"),
+    url("../fonts/Teko-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans.woff2") format("woff2"),
+    url("../fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Semibold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --Black: #1a1a1a;
+  --fadeBrown: #757575;
+  --grey: #666666;
+  --green: #91d849;
+  --parrotGreen: #2ecc71;
+  --seeGreen: #139fb1;
+  --lightGrey: #f5f5f5;
+  --skyblue: #0c71c3;
+  --BGrey: #eef1f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: normal;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+.display-3 {
+  color: var(--skyblue);
+  font-family: "Teko", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.secH {
+  color: var(--skyblue);
+  font-family: "Teko", Helvetica, Arial, Lucida, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.therdH {
+  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 25px;
+  color: var(--skyblue);
+  line-height: 1.4em;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.fourthH {
+  text-align: center;
+  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 28.8px;
+}
+.fifthH {
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* header css start */
+
+.miniheader {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: var(--green);
+}
+
+.miniheader .col-auto a {
+  font-family: "Open Sans";
+  font-weight: normal;
+  color: var(--fadeBrown);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.miniheader .col-auto a:hover {
+  color: var(--skyblue);
+}
+.miniheader .col-auto a i {
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.miniheader .container > .row {
+  justify-content: space-between;
+}
+
+.wrapheder{
+  min-height: 115px;
+}
+
+header{
+  position: relative;
+  z-index: 1055;
+}
+
+/* Navbar Styling */
+.mynavbar {
+  padding: 8px 0;
+  background-color: #ffffff !important;
+}
+.container-fluid{
+  max-width: 1920px;
+}
+.container.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navMenu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.navMenu .navLi {
+  position: relative;
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  padding:  0.5rem;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+.bg-light {
+  background-color: #ffffff !important;
+}
+
+.navLink:hover{
+  color: var(--secondary-color);
+}
+.navLink.active {
+  color: var(--secondary-color);
+}
+.navLink svg{
+  transform: translateY(-2px);
+}
+
+.brandLogo{
+  display: inline-block;
+  padding-right: 10px;
+  margin-right: 35px;
+  width: 7rem;
+}
+
+.dropdownList .navLink{
+  color: var(--lightBg);
+  padding: 8px 20px;
+  font-weight: 600;
+  display: block;
+  border-bottom: 1px solid var(--fade);
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.dropdownList .navLink:hover{
+  color: var(--grey);
+}
+
+/* Dropdown Styling */
+.dropdownList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  list-style: none;
+  min-width: 200px;
+  opacity: 0;
+  padding: 20px 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  border-top: 3px solid var(--Black);
+  box-shadow: 0 4px 18.3px 0 rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0 4px 18.3px 0 rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0 4px 18.3px 0 rgba(0, 0, 0, 0.13);
+}
+
+
+.navLi:hover .dropdownList {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdownList .navLi {
+  white-space: nowrap;
+}
+
+
+/* Mobile View */
+@media (max-width: 991px) {
+  .navMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    min-width: 204px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    padding-top: 60px;
+    transition: right 0.4s ease-in-out;
+  }
+
+  .navMenu.active {
+    right: 0;
+  }
+  .dropdownList .navLi {
+    text-wrap: auto;
+  }
+  .dropdownList {
+    transition: none;
+  }
+  
+/* Hide dropdown by default */
+.dropdownList {
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show dropdown when open */
+.dropdownList.open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  position: static;
+  transform: translateY(0);
+}
+
+/* Ensure SVG has pointer-events to prevent it from triggering parent link */
+.navLi > a > svg {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+  .navToggle {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .nav-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .btn-nav-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000000;
+    transform: rotate(45deg);
+  }
+}
+
+/* Hide toggle button and close button in desktop view */
+@media (min-width: 992px) {
+  .navToggle, .btn-nav-close {
+    display: none;
+  }
+}
+
+.sticky-header {
+  position: fixed;
+  top: -112.48px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+  transition: top 0.5s;
+  animation: 0.5s ease-in-out both slideDown;
+}
+
+@keyframes slideDown {
+  0% {
+    position: fixed;
+    top: -112.48px;
+  }
+  100% {
+    position: fixed;
+    top: 0;
+  }
+}
+.headerAnimate {
+  animation: 0.5s ease-in-out both slideUp;
+}
+@keyframes slideUp {
+  0% {
+    top: 50.48px;
+    position: relative;
+  }
+  100% {
+    top: 0;
+  }
+}
+.sticky-header.visible {
+  top: 0;
+}
+/* header css end */
+
+
+/* banner css start */
+#ca1.owl-carousel .bannerCard,
+.content {
+  opacity: 0;
+}
+.Banner .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  pointer-events: none;
+}
+.Banner .owl-nav button {
+  pointer-events: initial;
+  background-color: var(--skyblue) !important;
+  line-height: 1.25;
+  color: var(--lightGrey) !important;
+}
+.Banner .owl-nav button:hover {
+  background-color: var(--green) !important;
+}
+.Banner .owl-nav button span {
+  display: inline-block;
+  transform: translateY(-4px);
+}
+.Banner .owl-carousel .owl-nav button.owl-next,
+.Banner .owl-carousel .owl-nav button.owl-prev {
+  padding: 12px 15px !important;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out;
+}
+.Banner .owl-nav .owl-prev i {
+  margin-right: 10px;
+}
+.Banner .owl-nav .owl-next i {
+  margin-left: 10px;
+}
+.Banner .therdH {
+  font-weight: 400;
+}
+.container-fluid {
+  max-width: 1780px;
+}
+.Banner .owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+.Banner .owl-dots button.owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  background: #ffffff79;
+  margin: 4px 0;
+}
+.Banner .owl-dots button.owl-dot.active {
+  background-color: #fff;
+}
+.Banner .owl-dots button.owl-dot:focus {
+  outline: 0;
+}
+#ca1.owl-carousel .item {
+  padding: 80px 12px;
+  background-color: red;
+  height: 100vh;
+  position: relative;
+}
+#ca1.owl-carousel .item > .container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#ca1.owl-carousel .item1 {
+  background: linear-gradient(#0000008c, #0000008c) 0 0 / cover,
+    url("../image/asset\ 12.jpeg") center/cover no-repeat;
+}
+#ca1.owl-carousel .item2 {
+  background: linear-gradient(#0000008c, #0000008c) 0 0 / cover,
+    url("../image/asset\ 15.jpeg") center/cover no-repeat;
+}
+#ca1.owl-carousel .item3 {
+  background: linear-gradient(#0000008c, #0000008c) 0 0 / cover,
+    url("../image/asset\ 18.png") center/cover no-repeat;
+}
+#ca1.owl-carousel .item2 .bannerCard,
+.bannerCard{
+  margin: auto;
+}
+.bannertext1 {
+  border-radius: 25px;
+  text-align: center;
+}
+.bannertext1 .fillBtn{
+margin-right: 24px;
+}
+.bannerLinks{
+display: flex;
+margin-top: 60px;
+gap: 10px 50px;
+justify-content: center;
+}
+.bannerLinks a i{
+  color: var(--primary-color);
+  margin-right: 4px;
+}
+.bannerLinks a{
+  color: #ffffff;
+}
+
+.fillBtn{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.fillBtn:hover{
+  background-color: var(--secondary-color);
+  color: #ffffff;
+}
+.WhiteBtn{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  background-color: #ffffff28;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+}
+.WhiteBtn:hover{
+  background-color: #ffffff;
+  color: var(--darkGrey);
+}
+
+.bannertext1 .display-4{
+  color: #ffffff;
+}
+
+.bannertext1 {
+  color: #fff;
+}
+
+#ca1 .owl-item.active .bannerCard {
+  animation: 1s 0.5s both animate__fadeInUp;
+}
+@keyframes animate__fadeInUp {
+  0% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* banner css end */
+
+.container-fluid {
+  max-width: 1780px;
+}
+
+.btnOutline {
+  font-family: "Roboto", "Arial";
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: var(--parrotGreen);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.17);
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 25px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.btnOutline i {
+  position: relative;
+  transform: translateX(-20px);
+  margin-left: 4px;
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.btnOutline:hover {
+  color: #ffffff;
+}
+.btnOutline:hover i {
+  width: 12.6px;
+  transform: translateX(0px);
+  opacity: 1;
+}
+.btnOutline:hover {
+  background-color: var(--seeGreen);
+}
+
+
+.defaultPadding {
+  padding: 50px 0;
+}
+.Servicecards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+}
+.Servicecards img {
+  width: 45%;
+  margin-bottom: 30px;
+}
+.Servicecards .therdH {
+  font-size: 16px;
+}
+
+.absoluteLink {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.Servicecards:hover {
+  border: 2px solid var(--grey);
+}
+.bestPestControlServices .display-3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Why Choose Us section start */
+
+.whywChooseUs .secH {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.whywChooseUs .container {
+  padding: 0 4.8%;
+}
+.extra,
+.cardVerticle {
+  height: 100%;
+}
+.whywChooseUs .squareImg {
+  height: 60px;
+  width: 60px;
+  border-radius: 0;
+  border: none;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.whywChooseUs .cardVerticle {
+  padding: 40px 20px;
+  border: 2px solid var(--green);
+  transition: border 0.3s ease-in-out;
+  background-color: #ffffff;
+  height: 100%;
+}
+.whywChooseUs .cardVerticle:hover {
+  border: 2px solid var(--skyblue);
+}
+.whywChooseUs .cardVerticle p {
+  font-weight: 600;
+  color: var(--grey);
+}
+/* Why Choose Us section end */
+
+/* Get in Touch section start */
+.pestControlImg {
+  padding-right: 0;
+  border-radius: 10px 800px 800px 10px;
+  overflow: hidden;
+}
+
+/* Get in Touch section End */
+
+/* Pest Control Services section start */
+.pestControlServices .btnOutline {
+  display: table;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 0px;
+  background-color: var(--green);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.17);
+}
+
+.pestControlServices .btnOutline:hover {
+  background-color: var(--green);
+}
+/* Pest Control Services section end */
+
+/* Our Testimonials section start */
+.ourTestimonials .secH {
+  text-align: center;
+}
+.ourTestimonials .owl-carousel {
+  max-width: 1080px;
+  margin: auto;
+  box-shadow: 0px 30px 100px -40px rgba(0, 0, 0, 0.3);
+  overflow-x: hidden;
+}
+
+.ourTestimonials .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+.ourTestimonials .animate__slideInUp {
+  animation: slideInUp 1500ms 900ms ease both;
+}
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.testimonialCard {
+  position: relative;
+  padding: 16% 12%;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.testimonialCard .fifthH {
+  color: var(--Black);
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.testimonialCard .therdH {
+  font-family: "Roboto", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 24px !important;
+  color: #666666 !important;
+  line-height: 1.7em;
+  text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0);
+}
+
+.ourTestimonials .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  pointer-events: none;
+}
+.ourTestimonials .owl-nav button {
+  pointer-events: initial;
+  height: 50px;
+  width: 50px;
+  opacity: 1;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.25;
+  color: #2edcb1 !important;
+}
+.ourTestimonials .owl-carousel .owl-nav button.owl-prev {
+  font-size: 55px;
+  transform: translateX(-70px);
+  transition: transform 0.3s ease-in-out;
+}
+.ourTestimonials .owl-carousel .owl-nav button.owl-next {
+  font-size: 55px;
+  transform: translateX(70px);
+  transition: transform 0.3s ease-in-out;
+}
+.ourTestimonials .owl-carousel:hover .owl-nav button.owl-next {
+  transform: translateX(0px);
+}
+.ourTestimonials .owl-carousel:hover .owl-nav button.owl-prev {
+  transform: translateX(0px);
+}
+.ourTestimonials .owl-nav .owl-prev span {
+  transform: translateY(-7px);
+}
+.ourTestimonials .owl-nav .owl-next span {
+  transform: translateY(-7px);
+}
+.ourTestimonials .owl-dots {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ourTestimonials .owl-dots {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+.ourTestimonials .owl-dots button.owl-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  background: #2edcb194;
+  margin: 4px 0px;
+}
+.ourTestimonials .owl-dots button.owl-dot.active {
+  background-color: #2edcb1;
+}
+.ourTestimonials .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.ourTestimonials .hrBorder {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+}
+
+.hrBorder {
+  margin-top: 40px;
+  border-bottom: 1px solid #7ebec5;
+  margin-bottom: 20px;
+}
+/* Our Testimonials section end */
+
+
+/* whatsapp fab */
+.fab-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.Call-fab-container{
+  position: fixed;
+  bottom: 94px;
+  right: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+/* Footer section start  */
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.71);
+  color: white;
+}
+.footer.defaultPadding {
+  padding: 80px 0;
+}
+.footer .footer-brand {
+  display: inline-block;
+  width: 60%;
+  min-width: 150px;
+  margin-bottom: 30px;
+}
+.footer .secH {
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 35px;
+  color: #6eba01 !important;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+.footer .container > .row {
+  justify-content: space-between;
+}
+.exploreLinks a i {
+  margin-right: 20px;
+  font-size: 18px;
+  color: var(--green);
+}
+
+.footer >.container{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.footer ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+.footer ul li {
+  margin-bottom: 5px;
+}
+.footer ul li:last-child {
+  margin-bottom: 0;
+}
+.footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  color: var(--green);
+}
+.footer .contact-info i {
+  color: var(--green);
+  font-size: 20px;
+  margin-right: 10px;
+}
+.locationLink {
+  display: inline-block;
+  position: relative;
+  padding-left: 22px;
+}
+.locationLink i {
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.footer .social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 40px;
+}
+.footer .social-icons a {
+  display: flex;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 17px;
+  margin-right: 15px;
+}
+.footer .social-icons a:hover {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer .social-icons .facebook {
+  background-color: #0c71c3;
+}
+.footer .social-icons .instagram {
+  background-color: #ea2c59;
+}
+.footer .social-icons .whatsapp {
+  background-color: #25d366;
+}
+
+.copyrightSection {
+  background-color: var(--green);
+  padding: 15px 12px;
+}
+
+.copyrightSection{
+  margin-bottom: 0;
+  color: #203600;
+}
+
+.copyrightSection a{
+  font-weight: 600;
+  color: #442a81;
+}
+.copyrightSection a:hover{
+  color: var(--Black);
+}
+
+/****************
+***About Page****
+*****************/
+
+.PageBanner {
+  padding: 80px 0;
+  position: relative;
+  background: linear-gradient(#aed88685, #aed88685),
+    url("../image/asset\ 16.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover, cover, cover;
+  background-position: center;
+  background-blend-mode: difference;
+}
+.PageBanner::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #b7d89782;
+}
+.PageBanner .comtainer-fluid {
+  position: relative;
+  z-index: 2;
+}
+
+.PageBanner .display-3 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 84px;
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+  margin-bottom: 0;
+}
+.PageBanner .therdH {
+  color: #ffffff;
+}
+
+.aboutPage0.getInTouch .display-3 {
+  color: var(--green);
+  text-align: left;
+}
+.aboutPage0.getInTouch p {
+  color: var(--skyblue);
+}
+.btnCircle {
+  margin-top: 24px;
+  padding: 20px 30px;
+  display: inline-block;
+  color: #7cda24;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7cda24;
+  border-radius: 50px;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-family: "Sarabun", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.imgWraper {
+  position: relative;
+}
+
+.mainimgWrap {
+  width: 52%;
+  margin-left: auto;
+  margin-right: 17%;
+  z-index: 1;
+  position: relative;
+  border-radius: 100px 0 100px 0;
+  overflow: hidden;
+}
+
+.Leaf1 {
+  position: absolute;
+
+  margin-top: 24%;
+  margin-left: 28%;
+  width: 27%;
+  top: 0px;
+  bottom: auto;
+  left: -16%;
+  right: auto;
+  text-align: left;
+}
+
+.imgpart {
+  padding-bottom: 16%;
+  position: relative;
+}
+
+.mainimgWrap2 {
+  border-radius: 0 100px 0 100px;
+  overflow: hidden;
+  height: 60%;
+  width: 42%;
+  position: absolute;
+  bottom: 4%;
+  top: auto;
+  left: 4%;
+  right: auto;
+  background: url("../image/Untitled-design-9-1.png") no-repeat top;
+  background-size: 100%;
+}
+.Leaf2 {
+  position: absolute;
+  margin-left: 49%;
+  width: 17%;
+  top: unset;
+  bottom: -1%;
+  left: -16%;
+  z-index: 2;
+  right: auto;
+  text-align: left;
+}
+
+/* Premium Services section start */
+.Styledpara {
+  max-width: 710px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.countCards .fifthH {
+  font-weight: 500;
+}
+.countCards .display-3 {
+  font-weight: 700;
+  color: var(--perple);
+}
+
+.secH.styledText {
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.secH.styledText::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: var(--skyblue);
+}
+
+.premiumServices .secH.styledText {
+  font-weight: 500;
+}
+.premiumServices .display-3 {
+  font-family: Open Sans, Arial, sans-serif;
+  font-weight: bold;
+  color: var(--green);
+}
+/* Premium Services section end */
+
+/* Best Pest Control Services section start */
+.bestPestControl {
+  padding: 120px 0;
+  background-image: url("../image/person-white-chemical-protection-suit-doing-disinfection-pest-control-spraying-poison-kill-insects-rodents-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bestPestControl .display-3 {
+  text-align: left;
+  color: var(--green);
+  margin-bottom: 60px;
+}
+.bestPestControl .fourthH {
+  font-family: "Cormorant", Georgia, "Times New Roman", serif;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4em;
+  margin-bottom: 12px;
+}
+
+.bestPestControl ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.bestPestControl ul li {
+  padding-bottom: 30px;
+  color: #ffffff;
+  position: relative;
+  padding-left: 50px;
+  border-color: #bcb4a8;
+  border-bottom: 1px solid;
+  margin-bottom: 30px;
+}
+.bestPestControl ul li::before {
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Best Pest Control Services section end */
+
+/****************************
+***Termite Treatment Page****
+*****************************/
+
+.ServicesBanner {
+  position: relative;
+  background-size: initial;
+  background-position: left center;
+  background: url("../image/pest-control-32.png") no-repeat bottom left;
+}
+
+.ServicesBanner .conPos {
+  position: absolute;
+  top: 16%;
+  left: 0;
+  right: 0;
+}
+.ServicesBanner .display-3 {
+  font-size: 110px;
+  color: #000000;
+  text-align: left;
+  line-height: 1em;
+}
+.SerHeadSmall {
+  font-family: "Teko", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+}
+.ServicesBanner .btnOutline {
+  display: table;
+  margin: auto;
+  color: #ffffff !important;
+  padding: 16px 32px;
+  border-width: 0px !important;
+  border-radius: 0px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-top: 30px;
+  font-family: "Work Sans", Helvetica, Arial, Lucida, sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  background-color: #000000;
+}
+.ServicesBanner .btnOutline:hover {
+  background-color: #000000;
+}
+
+.BanneLink {
+  font-family: "Work Sans", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 1.2em;
+  color: var(--skyblue);
+  transition: color 0.3s;
+}
+
+.BanneLink:hover {
+  color: var(--Black);
+}
+
+.bannerImg {
+  width: 110%;
+  position: relative;
+  z-index: -2;
+}
+
+.newSection {
+background-color: #2ecc702d;
+box-shadow: 0px 23px 70px -20px rgba(0, 0, 0, 0.12);
+}
+
+.newSection .secH{
+  text-transform: capitalize;
+color: var(--Black);
+}
+
+
+.ServicesBanner .skewDesign {
+  background-color: #8fd84b;
+  mix-blend-mode: multiply;
+  backface-visibility: hidden;
+  height: 100%;
+  width: 160%;
+  position: absolute !important;
+  top: 0px;
+  bottom: auto;
+  z-index: -1;
+  right: 0px;
+  left: auto;
+  transform: skewX(45deg) skewY(0deg) translateX(2%);
+  transform-origin: right bottom;
+}
+.imgPart2 {
+  position: relative;
+}
+
+.features-section {
+  position: relative;
+}
+
+.features-section .container {
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 23px 70px -20px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+  margin-top: -170px;
+}
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  max-width: 32%;
+  margin-bottom: 20px;
+}
+.feature-title {
+  font-size: 18px;
+  font-family: "Work Sans", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  line-height: 1.8em;
+}
+
+.features-section p {
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.features-section .col-lg-4 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.features-section .col-lg-4:nth-child(1) {
+  padding-left: 12px;
+}
+.features-section .col-lg-4:nth-child(3) {
+  padding-right: 12px;
+}
+
+.getInTouch.servicePage0 .container > .row {
+  flex-direction: row-reverse;
+}
+.getInTouch.servicePage0 .container {
+  padding: 0 100px;
+}
+.getInTouch.servicePage0 .therdH {
+  font-family: "Teko", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000 !important;
+  letter-spacing: 0em;
+  line-height: 1.2em;
+}
+
+.getInTouch.servicePage0 .pestControlImg {
+  border-radius: 10px 300px 300px 10px;
+  overflow: hidden;
+}
+
+.getInTouch.servicePage0 {
+  position: relative;
+  background: url("../image/pest-controlSide.png") no-repeat bottom right;
+  background-size: 300px;
+}
+
+.servicePage0 .secH {
+  color: var(--Black);
+}
+
+/* clip-path: polygon(0 0, 100% 16%, 100% 100%, 0 85%); */
+
+/* Our Other Services section start */
+.ourOtherServices p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.ourOtherServices .container {
+  padding: 0 4.8%;
+}
+
+.newStyle.secH {
+  position: relative;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+.newStyle.secH::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.ourOtherServices .carSkewMain {
+  padding: 100px 30px;
+  background: var(--green);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.btnNew {
+  display: inline-block;
+  margin-top: 24px;
+  color: #ffffff !important;
+  padding: 16px 32px;
+  border-width: 0px !important;
+  border-radius: 0px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-top: 30px;
+  font-family: "Work Sans", Helvetica, Arial, Lucida, sans-serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  background-color: #000000;
+}
+.btnNew:hover {
+  background-color: #000000;
+}
+
+.btnNew i {
+  position: relative;
+  transform: translateX(-20px);
+  margin-left: 4px;
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnNew:hover i {
+  width: 12.6px;
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.cardSkew {
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-right: 10px;
+  padding-bottom: 60px;
+  padding-left: 10px;
+  box-shadow: 0px 17px 70px -20px rgba(0, 0, 0, 0.12);
+}
+.cardSkew:nth-of-type(odd) {
+  transform: skewX(0deg) skewY(-10deg);
+}
+.cardSkew.skewR {
+  box-shadow: 0px 17px 70px -20px rgba(0, 0, 0, 0.12);
+  transform: skewX(0deg) skewY(10deg);
+}
+
+.cardSkew .Servicecards {
+  transform: skewX(0deg) skewY(10deg);
+}
+.cardSkew.skewR .Servicecards {
+  transform: skewX(0deg) skewY(-10deg);
+}
+
+.cardSkew .Servicecards:hover {
+  border-color: transparent;
+}
+.cardSkew .fourthH {
+  font-family: "Work Sans", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  color: #000000 !important;
+  line-height: 1.5em;
+}
+.cardSkew .Servicecards img {
+  width: 60px;
+  margin-bottom: 30px;
+}
+
+/* Our Other Services section end */
+
+
+
+/******************
+***Contact Page****
+*******************/
+
+
+
+.messageHi {
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #4e5ed0;
+  color: #ffffff;
+  border-radius: 50px;
+}
+.messageHi::after {
+  position: absolute;
+  content: "";
+  top: 98%;
+  right: 30px;
+  height: 20px;
+  width: 30px;
+  background-color: #4e5ed0;
+  clip-path: polygon(18% 0, 0 97%, 100% 0);
+}
+
+.contactCardWrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+}
+.ContactForm textarea {
+  resize: none;
+}
+.contactCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.contactCard .PosAbsol {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.contactContent {
+  width: calc(100% - 65px);
+}
+.contactContent p,
+.contactContent address {
+  margin-bottom: 0;
+  color: var(--grey);
+}
+.contactIcon {
+  height: 40px;
+  width: 40px;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #4e5ed0;
+  transition: color 0.3s;
+}
+
+.contactCard:hover .contactIcon {
+  color: var(--Black);
+}
+
+.contactCardWrap .fourthH {
+  text-align: left;
+  font-weight: 500;
+}
+
+.sendUsMessage {
+  background: linear-gradient(90deg, #eef1f8 50%, #ffffff 50%);
+}
+.sendUsMessage .container > .row {
+  align-items: center;
+}
+.ContactForm .btnOutline {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4e5ed0;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.ContactForm .btnOutline:hover {
+  background-color: var(--green);
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  padding: 16px;
+  border: 3px solid #4e5ed0;
+  border-radius: 4px;
+  background-color: var(--BGrey);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-control:focus {
+  border-color: #4e5ed0;
+  background-color: var(--BGrey);
+  box-shadow: none;
+}
+
+.MapSection {
+  background: url("../image/MapPhoto.jpeg") no-repeat center;
+  background-size: cover;
+}
+.MapSection .container > div {
+  border: 4px solid var(--skyblue);
+}
+.MapSection .container iframe {
+  margin-bottom: -9px;
+}
+
+.sendUsMessage .secH{
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--Black);
+}
+
+/* loader CSS */
+ /* #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease;
+    }
+
+    #loader.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .spinner {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    } */
+
+
+    .bannertext1 {
+    background-color: #ffffff;
+    padding: 55px 48px !important;
+    color: var(--grey);
+    max-width: 450px;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.designerBorder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.designerBorder img {
+    width: 74px !important;
+}
